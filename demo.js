@@ -7,9 +7,9 @@ fs.exists('[2]',function(exists){
         process.chdir("./+dirName")
         fs.mkdirSync('css')
         fs.mkdirSync('js')
-        fs.writeFileSync("index.html", "<!DOCTYPE><title>Hello<title><h1>Hi<h1>")
+        fs.writeFileSync("index.html", "<!DOCTYPE>\n<title>Hello<title>\n<h1>Hi<h1>")
         fs.writeFileSync("css/style.css", "h1{color: red}")
-        fs.writeFileSync("js/main.js", "war string = 'Hello Word'  alert(sreing)")
+        fs.writeFileSync("js/main.js", "war string = 'Hello Word'\nalert(sreing)")
         process.exit(0)   
         }
 });
